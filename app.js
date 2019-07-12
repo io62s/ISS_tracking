@@ -28,9 +28,6 @@ const catchISS = async () => {
 const getIssPosition = async id => {
   const response = await fetch(`${BASE_URL}/${id}`);
   const data = await response.json();
-
-  console.log(data);
-
   return data;
 };
 
